@@ -1,9 +1,0 @@
-#!/bin/bash
-/usr/local/bin/sendtelegram -c /monit/default -m "
-Server:  $MONIT_HOST
-Host:     $MONIT_HOST
-IP:          $(curl ifconfig.co)
-Event:   $MONIT_EVENT
-Description: $MONIT_DESCRIPTION
-Times:   $MONIT_DATE
-"
